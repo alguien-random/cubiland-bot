@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'discrord.js',
+1 verbose cli   'nodemon',
+1 verbose cli   'better-sqlite3'
+1 verbose cli ]
+2 info using npm@6.14.12
+3 info using node@v12.22.1
+4 verbose config Skipping project config: /home/container/.npmrc. (matches userconfig)
+5 verbose npm-session 5d7db89ec3cc77e8
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 http fetch GET 404 https://registry.npmjs.org/discrord.js 2392ms
+9 http fetch GET 404 https://registry.npmjs.org/discrord.js 295ms
+10 silly fetchPackageMetaData error for discrord.js@latest 404 Not Found - GET https://registry.npmjs.org/discrord.js - Not found
+11 http fetch GET 304 https://registry.npmjs.org/better-sqlite3 3701ms (from cache)
+12 http fetch GET 304 https://registry.npmjs.org/nodemon 3705ms (from cache)
+13 silly pacote tag manifest for better-sqlite3@latest fetched in 3812ms
+14 silly pacote range manifest for nodemon@^2.0.12 fetched in 3816ms
+15 timing stage:rollbackFailedOptional Completed in 86ms
+16 timing stage:runTopLevelLifecycles Completed in 27593ms
+17 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/discrord.js - Not found
+17 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:117:15
+17 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+18 verbose statusCode 404
+19 verbose pkgid discrord.js@latest
+20 verbose cwd /home/container
+21 verbose Linux 5.4.0-80-generic
+22 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "discrord.js" "nodemon" "better-sqlite3"
+23 verbose node v12.22.1
+24 verbose npm  v6.14.12
+25 error code E404
+26 error 404 Not Found - GET https://registry.npmjs.org/discrord.js - Not found
+27 error 404
+28 error 404 'discrord.js@latest' is not in the npm registry.
+29 error 404 You should bug the author to publish it (or use the name yourself!)
+30 error 404 Note that you can also install from a
+31 error 404 tarball, folder, http url, or git url.
+32 verbose exit [ 1, true ]
